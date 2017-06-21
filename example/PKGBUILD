@@ -7,7 +7,7 @@
 
 pkgname=example
 pkgver=0
-pkgrel=1
+pkgrel=1.1
 pkgdesc="LSB version query program"
 arch=('any')
 url="http://www.linuxbase.org/"
