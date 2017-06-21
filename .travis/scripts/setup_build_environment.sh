@@ -39,3 +39,9 @@ cp -a "${ORIGINAL_DIR}" "${CHROOT_BUILD_DIR}"
 
 echo "Debug: rights of ${CHROOT_BUILD_DIR}"
 ls -lasi "${CHROOT_BUILD_DIR}"
+
+echo "Debug: changing rights once more ..."
+sudo chmod -R 777 "${CHROOT_BUILD_DIR}"
+
+echo "Debug: rights of ${CHROOT_BUILD_DIR}"
+ls -lasi "${CHROOT_BUILD_DIR}"
