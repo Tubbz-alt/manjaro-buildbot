@@ -5,7 +5,7 @@ pkgname=example
 # Commit date + git rev-parse --short origin/master
 _rev=6d3bc88
 pkgver=20170113.${_rev}
-pkgrel=1
+pkgrel=0
 pkgdesc="Firmware files for Linux"
 makedepends=('git')
 arch=('any')
