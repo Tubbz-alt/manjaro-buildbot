@@ -34,4 +34,8 @@ cd "${ORIGINAL_DIR}"
 # copy things forward to a new directory within the chroot
 sudo mkdir "${CHROOT_BUILD_DIR}"
 sudo chmod -R 777 "${CHROOT_BUILD_DIR}"
+sudo chown $USER "${CHROOT_BUILD_DIR}"
 cp -a "${ORIGINAL_DIR}" "${CHROOT_BUILD_DIR}"
+
+echo "Debug: rights of ${CHROOT_BUILD_DIR}"
+ls -lasi "${CHROOT_BUILD_DIR}"
