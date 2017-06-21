@@ -2,6 +2,8 @@ language: bash
 dist: trusty
 sudo: required
 
+group: deprecated-2017Q2
+
 env:
   matrix:
     - INIT=systemd
