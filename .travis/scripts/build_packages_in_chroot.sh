@@ -8,6 +8,10 @@ CHROOT_BUILD_DIR_LOC="${CHROOT_DIR_LOC}/${CHROOT_BUILD_DIR_NAME}"
 
 user=$USER
 
+# show used user
+
+echo "manjaro-chroot is using $user as user account"
+
 # commit range for which we will be building the packages
 COMMIT_RANGE=$1
 
