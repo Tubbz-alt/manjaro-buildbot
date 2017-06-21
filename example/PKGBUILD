@@ -12,7 +12,7 @@ pkgdesc="LSB version query program"
 arch=('any')
 url="http://www.linuxbase.org/"
 license=('GPL2')
-source=("http://downloads.sourceforge.net/lsb/lsb-release-$pkgver.tar.gz")
+source=("http://downloads.sourceforge.net/lsb/lsb-release-1.4.tar.gz")
 sha256sums=('99321288f8d62e7a1d485b7c6bdccf06766fb8ca603c6195806e4457fdf17172')
 
 build() {
