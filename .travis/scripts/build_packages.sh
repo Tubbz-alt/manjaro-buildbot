@@ -24,7 +24,7 @@ STATUS=0
 # build the changed packages
 for pkgpath in ${PKG_PATHS}; do
 	[ ! -e "$pkgpath" ] && continue  # package probably deleted
-	#cd "${pkgpath}"
+	cd "${pkgpath}/.."
 	pkgname=$(echo $pkgpath | rev | cut -d / -f 1 | rev)
 
 	travis_fold start "build_${pkgname}"
@@ -52,7 +52,7 @@ for pkgpath in ${PKG_PATHS}; do
 	fi
 	travis_fold end "build_${pkgname}"
 
-	#cd -
+	cd -
 done
 
 exit $STATUS
